@@ -4,14 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deya Company - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /*
+         Header styles */
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Navigation styles */
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Table styles */
+        .service-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .service-table th,
+        .service-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .service-table th {
+            background-color: #f2f2f2;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer .social-media a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .footer .subscription-form input[type="email"],
+        .footer .subscription-form button {
+            padding: 8px;
+        }
+
+        .footer .footer-logo img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="company_logo.avif" width="100" height="100" alt="Deya Company Logo">
+            <img src="company_logo.avif" width="50" height="50" alt="Deya Company Logo">
         </div>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -23,7 +98,7 @@
 
     <main>
         <div class="home">
-            <img src="home_image.jpg"  alt="Hero Image">
+            <img src="home_image.jpg" width="1303" height="500" alt="Hero Image">
         </div>
         
         <section class="introduction">
@@ -34,7 +109,7 @@
         
         <section class="data-table">
             <h2>Our Services</h2>
-            <table>
+            <table class="service-table">
                 <thead>
                     <tr>
                         <th>Service</th>
@@ -59,7 +134,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="social-media">
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
